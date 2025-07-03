@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(237, 166, 34);
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 60px;
+  z-index: 2;
+}
+
+.clock {
+  position: relative;
+  background-color: rgb(249, 212, 212);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: relative;
+  border: 5px solid rgb(156, 50, 50);
+  box-shadow: 1px 1px 4px rgba(161, 4, 4, 0.7);
+}
+
+.numbers div {
+  position: absolute;
+  font-size: 27px;
+  font-weight: bold;
+  color: rgb(156, 50, 50);
+}
+
+.twelve {
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.one {
+  top: 44px;
+  right: 81px;
+  transform: translateY(-50%);
+}
+
+.two {
+  top: 31%;
+  right: 37px;
+  transform: translateY(-50%);
+}
+
+.three {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.four {
+  bottom: 31%;
+  right: 37px;
+  transform: translateY(50%);
+}
+
+.five {
+  bottom: 28px;
+  right: 81px;
+}
+
+.six {
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.seven {
+  bottom: 28px;
+  left: 81px;
+}
+
+.eight {
+  bottom: 31%;
+  left: 37px;
+  transform: translateY(50%);
+}
+
+.nine {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.ten {
+  top: 31%;
+  left: 37px;
+  transform: translateY(-50%);
+}
+
+.eleven {
+  top: 28px;
+  left: 81px;
+}
+
+.arrows {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows::before{
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: rgb(156, 50, 50);
+  border-radius: 50%;
+  box-shadow:1px 1px 2px rgba(161, 4, 4, 0.7);
+  z-index: 4;
+}
+
+.arrows div{
+  background-color: rgb(0, 0, 0);
+  width: 5px;
+  position: absolute;
+  height: 120px;
+  transform-origin: bottom center;
+  bottom: 50%;
+  z-index: 3;
+  border-radius: 50% 50% 0 0;
+  box-shadow: 1px 1px 2px rgba(161, 4, 4, 0.7);
+}
+
+.arrows .hour {
+  height: 80px;
+  transform: rotate(30deg);
+  background-color: rgb(5, 5, 5);
+}
+
+.arrows .second {
+  height: 100px;
+  transform: rotate(250deg);
+  background-color: rgb(230, 135, 11);
+}
